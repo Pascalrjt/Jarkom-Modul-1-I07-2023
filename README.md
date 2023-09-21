@@ -242,4 +242,4 @@ Telnet
 
 Explanation:
 - First we filter out with `telnet`
-- Then we browse the headers until we find one where its clear that has username and password which we find in `header number 87` and the login credentials are `dhafin:kesayangannyak0k0`
+- Then we browse the headers and look into the `Telnet` drop down tab until we find one where the data resembles a username and password which we find in `header number 87` and the login credentials are `dhafin:kesayangannyak0k0`
