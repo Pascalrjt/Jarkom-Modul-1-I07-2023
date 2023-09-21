@@ -128,7 +128,7 @@ QUIC IETF
 Explanation:
 - First go to the Header number 130, afterwards double click it.
 - Then click on the `User Datagram Protocol`, it will open a drop down tab.
-- There we can search for the `Checksum value`, which in this case `0x18e5` 
+- There we can search for the `Checksum value`, which in this case is `0x18e5` 
 
 ## Number 5
 ```
@@ -193,7 +193,9 @@ ip.dst == 184.87.193.88
 ```
 
 Explanation:
-- `No current explanation` 
+- Since the question asks for the packets that are  `menuju IP 184.87.193.88`, it means that the `destination` of the packets are `184.87.193.88`
+- `ip.dst` is for filtering the `IP destinations` which in this case is  `184.87.193.88`
+- Afterwards we count number of packets which are `6`
 
 ## Number 8
 ```
@@ -219,7 +221,9 @@ ip.src == 10.51.40.1 && ip.dst != 10.39.55.34
 ```
 
 Explanation:
-- `No current explanation` 
+- The question asks for packets that `berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34` which means that it is looking for packets which `source` is IP `10.51.40.1` and the `destination` is not IP `10.39.55.34` 
+- `ip.src` is for filtering the `IP sources` which in this case is  `10.51.40.1`
+- `ip.dst` is for filtering the `IP desinations` which in this case is NOT `10.39.55.34` which is denoted by the `!=`.
 
 ## Number 10
 ```
@@ -228,8 +232,14 @@ Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 Solution:<br>
 
 ```sh
-telnet
+Frame 87: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface tap2, id 0
+Ethernet II, Src: 0c:c8:32:27:00:00 (0c:c8:32:27:00:00), Dst: 26:82:4f:e4:c2:07 (26:82:4f:e4:c2:07)
+Internet Protocol Version 4, Src: 172.16.0.4, Dst: 172.16.0.254
+Transmission Control Protocol, Src Port: 23, Dst Port: 57784, Seq: 13, Ack: 26, Len: 26
+Telnet
+    Data: dhafin:kesayangannyak0k0\r\n
 ```
 
 Explanation:
-- `No current explanation` 
+- First we filter out with `telnet`
+- Then we browse the headers until we find one where its clear that has username and password which we find in `header number 87` and the login credentials are `dhafin:kesayangannyak0k0`
