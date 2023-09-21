@@ -190,6 +190,8 @@ Berapa jumlah packet yang menuju IP 184.87.193.88?
 ```
 Solution:<br>
 
+![Number7_image](https://media.discordapp.net/attachments/906158395617320980/1154435868950548531/Screenshot_2023-09-18_193024.png)  
+
 ```sh
 ip.dst == 184.87.193.88
 ```
@@ -218,6 +220,8 @@ Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari 
 ```
 Solution:<br>
 
+![Number9_image](https://media.discordapp.net/attachments/824131614073683968/1154435176940711996/Screenshot_2023-09-18_203242.png?width=627&height=671)
+
 ```sh
 ip.src == 10.51.40.1 && ip.dst != 10.39.55.34
 ```
@@ -231,6 +235,9 @@ Explanation:
 ```
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 ```
+
+![Number10_image](https://media.discordapp.net/attachments/824131614073683968/1154435176592592996/Screenshot_2023-09-18_202027.png)
+
 Solution:<br>
 
 ```sh
