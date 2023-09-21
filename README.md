@@ -236,9 +236,9 @@ Explanation:
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 ```
 
-![Number10_image](https://media.discordapp.net/attachments/824131614073683968/1154435176592592996/Screenshot_2023-09-18_202027.png)
-
 Solution:<br>
+
+![Number10_image](https://media.discordapp.net/attachments/824131614073683968/1154435176592592996/Screenshot_2023-09-18_202027.png)
 
 ```sh
 Frame 87: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface tap2, id 0
