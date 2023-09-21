@@ -109,6 +109,8 @@ Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 ```
 Solution:<br>
 
+![Number4_image](https://media.discordapp.net/attachments/824131614073683968/1154435177255288943/Screenshot_2023-09-18_205640.png?width=681&height=671)  
+
 ```sh
 Frame 130: 196 bytes on wire (1568 bits), 196 bytes captured (1568 bits) on interface \Device\NPF_{3F96C891-C513-447E-9B66-6C81A5C93077}, id 0
 Ethernet II, Src: 02:e4:90:54:f3:42 (02:e4:90:54:f3:42), Dst: zte_e8:05:1c (28:c8:7c:e8:05:1c)
