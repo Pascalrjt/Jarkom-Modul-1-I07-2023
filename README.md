@@ -27,9 +27,6 @@ ftp
 - Lihat jendela _packet details_, dan drop down pada pilihan "Transmission Control Protocol, ..."
 - Lihat Sequence number (raw) yang dicari, yaitu 25804667
 
-Explanation:
-- `No current explanation` 
-
 ### 1B
 ```
 Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut? 
@@ -43,9 +40,6 @@ ftp
 - Di kolom "Info", cari yang berbentuk "Request: STOR ..."
 - Lihat jendela _packet details_, dan drop down pada pilihan "Transmission Control Protocol, ..."
 - Lihat Acknowledgment number (raw) yang dicari, yaitu 1044861039
-  
-Explanation:
-- `No current explanation` 
 
 ### 1C
 
@@ -62,9 +56,6 @@ ftp
 - Lihat jendela _packet details_, dan drop down pada pilihan "Transmission Control Protocol, ..."
 - Lihat Sequence Number (raw) yang dicari, yaitu 1044861039
 
-Explanation:
-- `No current explanation` 
-
 ### 1D
 
 ```
@@ -79,10 +70,18 @@ ftp
 - Lihat jendela _packet details_, dan drop down pada pilihan "Transmission Control Protocol, ..."
 - Lihat Acknowledgment number (raw) yang dicari, yaitu 258040696
 
-Explanation:
-- `No current explanation` 
+Explanation & Conclusion for Number 1:
 
+Hasil filtering 'ftp' akan membantu menemukan dua data yang memiliki info STOR beserta response nya seperti pada gambar berikut,
 
+![1 1](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/6809fcae-24ec-43be-b661-b08c6204af2c)
+
+Berikut adalah dua baris data yang perlu diurai. Dengan membukanya, Anda akan melihat rincian paket mereka (Sequence Number and Acknowledgment Number). 
+
+![1 1 2](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/956566d6-ec8b-49bd-96e8-61388d07a36f)
+![1 1 3](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/0288161c-42c0-44ed-ae69-970991be5884)
+
+Yang bisa kita simpulkan dengan melihat angka pada Sequence dan Acknowledgment adalah Sequence Number (raw) pada proses STOR akan sama dengan Acknowledgment Number (raw) pada response aktivitas yang sama. Begitu juga dengan Acknowledgment Number (raw) pada STOR akan sama dengan Sequence Number (raw) pada response proses tersebut.
 
 ## Number 2
 ```
