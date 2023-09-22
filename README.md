@@ -89,20 +89,14 @@ Explanation:
 Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 ```
 Solution:<br>
-
-- Apply this filter in Wireshark
-```sh
-http.response
-```
-- The data's :
 ![1 2 1](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/008a6282-aa5d-4255-8da3-11e4e88bce52)
-- Choose data that has `HTTP` on `Protocol` column
-- In packet details drop down the `Hypertext Transfer Protocol` then see the value after `Server`
 ![1 2 2](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/7dd217c1-b90a-418c-b467-a06eb24cb725)
-- The answer will be `gunicorn`
 
 Explanation:
-- `No current explanation` 
+- Apply this filter in Wireshark `http.response`
+- Choose or Click one of the data that has `HTTP` on `Protocol` column
+- In packet details, drop down the `Hypertext Transfer Protocol` then see the value after `Server`
+- The answer will be `gunicorn`
 
 ## Number 3
 ```
