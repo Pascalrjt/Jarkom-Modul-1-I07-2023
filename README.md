@@ -18,9 +18,15 @@ User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya
 Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut? 
 ```
 Solution:<br>
+
+- Filtering dengan format berikut,
 ```sh
-//No current solution
+ftp
 ```
+- Di kolom "Info", cari yang berbentuk "Request: STOR ..."
+- Lihat jendela _packet details_, dan drop down pada pilihan "Transmission Control Protocol, ..."
+- Lihat Sequence number (raw) yang dicari, yaitu 25804667
+
 Explanation:
 - `No current explanation` 
 
@@ -29,9 +35,15 @@ Explanation:
 Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut? 
 ```
 Solution:<br>
+
+- Filtering dengan format berikut,
 ```sh
-//No current solution
+ftp
 ```
+- Di kolom "Info", cari yang berbentuk "Request: STOR ..."
+- Lihat jendela _packet details_, dan drop down pada pilihan "Transmission Control Protocol, ..."
+- Lihat Acknowledgment number (raw) yang dicari, yaitu 1044861039
+  
 Explanation:
 - `No current explanation` 
 
@@ -41,9 +53,15 @@ Explanation:
 Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 ```
 Solution:<br>
+
+- Filtering dengan format berikut,
 ```sh
-//No current solution
+ftp
 ```
+- Di kolom "Info", cari yang berbentuk "Response: ..." dan pastikan data yang respon adalah data yang berada di STOR
+- Lihat jendela _packet details_, dan drop down pada pilihan "Transmission Control Protocol, ..."
+- Lihat Sequence Number (raw) yang dicari, yaitu 1044861039
+
 Explanation:
 - `No current explanation` 
 
@@ -53,9 +71,14 @@ Explanation:
 Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 ```
 Solution:<br>
+
 ```sh
-//No current solution
+ftp
 ```
+- Di kolom "Info", cari yang berbentuk "Response: ..." dan pastikan data yang respon adalah data yang berada di STOR
+- Lihat jendela _packet details_, dan drop down pada pilihan "Transmission Control Protocol, ..."
+- Lihat Acknowledgment number (raw) yang dicari, yaitu 258040696
+
 Explanation:
 - `No current explanation` 
 
