@@ -102,29 +102,29 @@ Explanation:
 ```
 Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
 ```
+Solution:<br>
+![1 3 1](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/ce90c79e-ec99-4845-8863-b60d3fdfea86)
+![1 3 2](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/b71734a4-7665-4113-afd4-7395e61f4484)
 
 ### 3A
 
 ```
 Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
 ```
-Solution:<br>
-```sh
-//No current solution
-```
 Explanation:
-- `No current explanation` 
+- There will be two filter, first `ip.addr == 239.255.255.250` and `udp.port == 3702`
+- Combine those filter with `&&` in Whiteshark filter
+- Count the data after filtering
+- The answer will be `21`
 
 ### 3B
 ```
 Protokol layer transport apa yang digunakan?
 ```
-Solution:<br>
-```sh
-//No current solution
-```
+
 Explanation:
-- `No current explanation` 
+- Using the same filter previously, see the `Protocol` column 
+- All the data that shown will be `UDP`
 
 ## Number 4
 ```
