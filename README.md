@@ -19,13 +19,16 @@ Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut?
 ```
 Solution:<br>
 
-- Filtering dengan format berikut,
-```sh
-ftp
-```
-- Di kolom "Info", cari yang berbentuk "Request: STOR ..."
-- Lihat jendela _packet details_, dan drop down pada pilihan "Transmission Control Protocol, ..."
-- Lihat Sequence number (raw) yang dicari, yaitu 25804667
+![1 1 1](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/4ef19f3f-f46e-443c-9a72-7525e6805ec4)
+![1 1 2 ab](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/36340239-af55-4965-ad03-cff1c005d228)
+![1 1 3 a](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/73f52113-d4db-42ea-b08e-d696f6ca3245)
+
+Explanation:
+
+- Filter with this format `ftp`
+- On the `Info` column, find data with this type `Request: STOR ...`
+- Look into _packet details_ window and drop down the `Transmission Control Protocol, ...` option
+- Find Acknowledgment number (raw), in this case the number is `25804667`
 
 ### 1B
 ```
@@ -33,28 +36,35 @@ Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas terseb
 ```
 Solution:<br>
 
-- Filtering dengan format berikut,
-```sh
-ftp
-```
-- Di kolom "Info", cari yang berbentuk "Request: STOR ..."
-- Lihat jendela _packet details_, dan drop down pada pilihan "Transmission Control Protocol, ..."
-- Lihat Acknowledgment number (raw) yang dicari, yaitu 1044861039
+![1 1 1](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/4ef19f3f-f46e-443c-9a72-7525e6805ec4)
+![1 1 2 ab](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/36340239-af55-4965-ad03-cff1c005d228)
+![1 1 3 b](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/52595129-aab0-4270-9b27-efc6ad813ed3)
+
+Explanation:
+
+- Filter with this format `ftp`
+- On the `Info` column, find data with this type `Request: STOR ...`
+- Look into _packet details_ window and drop down the `Transmission Control Protocol, ...` option
+- Find Acknowledgment number (raw), in this case the number is `1044861039`
 
 ### 1C
 
 ```
 Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 ```
+
 Solution:<br>
 
-- Filtering dengan format berikut,
-```sh
-ftp
-```
-- Di kolom "Info", cari yang berbentuk "Response: ..." dan pastikan data yang respon adalah data yang berada di STOR
-- Lihat jendela _packet details_, dan drop down pada pilihan "Transmission Control Protocol, ..."
-- Lihat Sequence Number (raw) yang dicari, yaitu 1044861039
+![1 1 1](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/4ef19f3f-f46e-443c-9a72-7525e6805ec4)
+![1 1 2 cd](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/e0d3f036-887e-4adb-8b34-389ec4f66a91)
+![1 1 3 c](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/e131b36c-a9f9-4c52-bc4d-d926aa767341)
+
+Explanation:
+
+- Filter with this format `ftp`
+- On the `Info` column, find data with this type `Responses: ...`. Make sure it is the response of the same data before.
+- Look into _packet details_ window and drop down the `Transmission Control Protocol, ...` option
+- Find Sequence number (raw), in this case the number is `1044861039`
 
 ### 1D
 
@@ -63,25 +73,16 @@ Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari ak
 ```
 Solution:<br>
 
-```sh
-ftp
-```
-- Di kolom "Info", cari yang berbentuk "Response: ..." dan pastikan data yang respon adalah data yang berada di STOR
-- Lihat jendela _packet details_, dan drop down pada pilihan "Transmission Control Protocol, ..."
-- Lihat Acknowledgment number (raw) yang dicari, yaitu 258040696
+![1 1 1](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/4ef19f3f-f46e-443c-9a72-7525e6805ec4)
+![1 1 2 cd](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/e0d3f036-887e-4adb-8b34-389ec4f66a91)
+![1 1 3 d](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/425ed861-1a5c-48cf-a8ea-b50322981a6d)
 
-Explanation: (Whole Number 1)
+Explanation:
 
-Hasil filtering 'ftp' akan membantu menemukan dua data yang memiliki info STOR beserta response nya seperti pada gambar berikut,
-
-![1 1](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/6809fcae-24ec-43be-b661-b08c6204af2c)
-
-Berikut adalah dua baris data yang perlu diurai. Dengan membukanya, Anda akan melihat rincian paket mereka (Sequence Number and Acknowledgment Number). 
-
-![1 1 2](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/956566d6-ec8b-49bd-96e8-61388d07a36f)
-![1 1 3](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/0288161c-42c0-44ed-ae69-970991be5884)
-
-Yang bisa kita simpulkan dengan melihat angka pada Sequence dan Acknowledgment adalah Sequence Number (raw) pada proses STOR akan sama dengan Acknowledgment Number (raw) pada response aktivitas yang sama. Begitu juga dengan Acknowledgment Number (raw) pada STOR akan sama dengan Sequence Number (raw) pada response proses tersebut.
+- Filter with this format `ftp`
+- On the `Info` column, find data with this type `Responses: ...`. Make sure it is the response of the same data before.
+- Look into _packet details_ window and drop down the `Transmission Control Protocol, ...` option
+- Find Sequence number (raw), in this case the number is `258040696`
 
 ## Number 2
 ```
