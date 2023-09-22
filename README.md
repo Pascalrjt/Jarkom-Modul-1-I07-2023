@@ -229,13 +229,12 @@ Explanation:
 Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
 ```
 Solution:<br>
-
-```sh
-//No current solution
-```
+![1 8 1](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/fd588b77-3340-4360-bc6b-9a46d1c5bed9)
 
 Explanation:
-- `No current explanation` 
+- There will be two filter, first `tcp.dstport == 80` and `udp.dstport == 80`
+- Please note that after the dot, you need to include `dst` which stands for destination
+- Combine those two filter with `||`, so it will be  `tcp.dstport == 80 || udp.dstport == 80`
 
 ## Number 9
 ```
