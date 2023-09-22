@@ -70,7 +70,7 @@ ftp
 - Lihat jendela _packet details_, dan drop down pada pilihan "Transmission Control Protocol, ..."
 - Lihat Acknowledgment number (raw) yang dicari, yaitu 258040696
 
-Explanation & Conclusion for Number 1:
+Explanation: (Whole Number 1)
 
 Hasil filtering 'ftp' akan membantu menemukan dua data yang memiliki info STOR beserta response nya seperti pada gambar berikut,
 
@@ -89,13 +89,19 @@ Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 ```
 Solution:<br>
 
+- Apply this filter in Wireshark
 ```sh
-//No current solution
+http.response
 ```
+- The data's :
+![1 2 1](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/008a6282-aa5d-4255-8da3-11e4e88bce52)
+- Choose data that has `HTTP` on `Protocol` column
+- In packet details drop down the `Hypertext Transfer Protocol` then see the value after `Server`
+![1 2 2](https://github.com/Pascalrjt/Jarkom-Modul-1-I07-2023/assets/89951546/7dd217c1-b90a-418c-b467-a06eb24cb725)
+- The answer will be `gunicorn`
 
 Explanation:
 - `No current explanation` 
-
 
 ## Number 3
 ```
